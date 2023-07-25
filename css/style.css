@@ -1,0 +1,260 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../Fonts/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url(../Fonts/Poppins-Medium.ttf);
+}
+*{
+    font-family: "Poppins";
+}
+
+p{
+    font-family: "Poppins-Medium";
+}
+
+body{
+    background-color: #212121;
+    margin: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/bg-image\ 1.png);
+    max-height: 100%;
+    background-size: cover;
+}
+
+.header_title{
+    text-align: center;
+    font-size: 64px;
+    transition: 0.4s ease-in;
+}
+
+.header_title:hover{
+    color: #4C70EF;
+}
+
+.header_text{
+    text-align: center;
+    font-size: 24px;
+}
+
+.header_social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_wrapper{
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 2rem 1rem;
+}
+
+.About{
+    max-width: 1180px;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_me,.WhatIDo,.portfolio_text{
+    font-size: 24px;
+    color: #4C70EF;
+    text-transform:uppercase;
+}
+
+.Name,.Specializing,.portfolio_latest{
+    font-size: 36px;
+}
+
+.About_Content{
+    margin-left: 2rem;
+}
+
+.About img{
+    max-width: 100%;
+}
+
+.WhatIDo,.Specializing,.portfolio_latest,.portfolio_text{
+    text-align: center;
+}
+
+
+.About_text{
+    color: #B0ADAD;
+    line-height: 2rem;
+    font-size: 18px;
+}
+
+.About_parent,.Service_parent,.Portfolio_parent,.contact_me_parent{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service_card{
+    margin: 0 1rem;
+    max-width: 480px;
+    background-color: #292C36;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.service_card:hover{
+    transform: scale(1.1);
+}
+
+.service_head{
+    display: flex;
+    align-items: center;
+}
+
+.img_wrapper{
+    background-color: #38405A;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.row{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.service_head h1{
+    font-size: 24px;
+}
+
+.service_text{
+    margin-top: 2rem;
+    color: #B0ADAD;
+}
+
+.portfolio_img_wrapper img{
+    max-width: 100%;
+    border-radius: 12px 12px 0 0;
+    max-height: 100%;
+    object-fit:cover;
+}
+
+.portfolio_card{
+    margin: 0 1rem;
+    border-radius: 12px;
+    height:100%;
+    max-width: 380px;
+    background-color: #292C36;
+    transition: 0.3s ease;
+}
+
+.portfolio_card:hover{
+    transform: scale(1.1);
+}
+
+.portfolio_content{
+    padding: 1rem;
+}
+
+.portfolio_card_title{
+    font-family: Poppins-Medium;
+    font-size: 20px;
+}
+
+.portfolio_card_btn{
+    padding: 10px 1rem;
+    color: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    font-family: Poppins-Medium;
+    background-color: #558FFF;
+    cursor: pointer;
+}
+
+.contact_me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    width: 980px;
+    height: 277px;
+    background-color: #292C36;
+}
+
+.contact_me_title{
+    font-size: 32px;
+}
+
+.contact_me_btn{
+    background-color: #558FFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.contact_me_btn:hover{
+    transform: scale(1.2);
+    background-color: #FFFFFF;
+    color: #212121;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #292C36;
+    margin-top: 8rem;
+}
+
+.footer_logo{
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.footer_copyright{
+    font-size: 16px;
+}
+
+@media only screen and (max-width:1000px) {
+    .About_Content{
+        margin: 0;
+    }
+    .header_title{
+        font-size: 50px;
+    }
+    .service_card{
+        margin: 1rem 2rem;
+    }
+    .About{
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .portfolio_card{
+        margin: 1rem 0;
+    }
+    .contact_me{
+        margin: 1rem 1.8rem;
+        max-width: 980px;
+    }
+    .contact_me_title{
+        font-size: 30px;
+    }
+}
